@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 配置应用名称 -->
+    <dubbo:application name="p2p"/>
+
+    <!-- 配置注册中心 -->
+    <dubbo:registry  protocol="zookeeper" address="192.168.252.128:2181"/>
+
+    <!-- 产品业务 -->
+    <dubbo:reference id="loanInfoService" interface="com.lanou.service.loan.LoanInfoService" version="1.0.0" check="false"/>
+    
+    <!-- 用户业务 -->
+    <dubbo:reference  id="userService" interface="com.lanou.service.user.UserService" version="1.0.0" check="false"/>
+
+    <dubbo:reference  id="financeAccountService" interface="com.lanou.service.user.FinanceAccountService" version="1.0.0" check="false"/>
+
+    <!-- 投资业务 -->
+    <dubbo:reference  id="bidInfoService" interface="com.lanou.service.loan.BidInfoService" version="1.0.0" check="false"/>
+
+    <dubbo:reference  id="rechargeRecordService" interface="com.lanou.service.loan.RechargeRecordService" version="1.0.0" check="false"/>
+
+    <dubbo:reference  id="incomeRecordService" interface="com.lanou.service.loan.IncomeRecordService" version="1.0.0" check="false"/>
+</beans>
