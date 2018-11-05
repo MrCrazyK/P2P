@@ -1,6 +1,6 @@
 package com.lanou.web;
 
-import com.lanou.common.constant.Constants;
+import com.lanou.constant.Constants;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 

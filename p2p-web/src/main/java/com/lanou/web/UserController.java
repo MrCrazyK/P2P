@@ -1,7 +1,7 @@
 package com.lanou.web;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lanou.common.constant.Constants;
+import com.lanou.constant.Constants;
 import com.lanou.config.Config;
 import com.lanou.model.loan.BidInfo;
 import com.lanou.model.loan.IncomeRecord;

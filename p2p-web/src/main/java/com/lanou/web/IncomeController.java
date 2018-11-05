@@ -1,6 +1,6 @@
 package com.lanou.web;
 
-import com.lanou.common.constant.Constants;
+import com.lanou.constant.Constants;
 import com.lanou.model.loan.IncomeRecord;
 import com.lanou.model.user.User;
 import com.lanou.model.vo.PaginationVO;

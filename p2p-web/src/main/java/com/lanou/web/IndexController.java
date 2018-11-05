@@ -1,6 +1,6 @@
 package com.lanou.web;
 
-        import com.lanou.common.constant.Constants;
+        import com.lanou.constant.Constants;
         import com.lanou.model.loan.LoanInfo;
         import com.lanou.service.loan.BidInfoService;
         import com.lanou.service.loan.LoanInfoService;

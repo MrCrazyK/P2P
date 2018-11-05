@@ -1,6 +1,6 @@
 package com.lanou.service.loan;
 
-import com.lanou.common.constant.Constants;
+import com.lanou.constant.Constants;
 import com.lanou.mapper.loan.LoanInfoMapper;
 import com.lanou.model.loan.LoanInfo;
 import com.lanou.model.vo.PaginationVO;
